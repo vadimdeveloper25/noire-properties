@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const Why = () => {
   return (
     <section id="why" className="flex flex-col lg:gap-10 pb-20 ">
-      <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="pt-20 text-4xl pb-5 lg:text-5xl self-center font-heading font-medium">Why Noire</motion.h2>
+      <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="pt-20 text-3xl md:text-4xl pb-5 lg:text-5xl self-center font-heading font-medium">Why Noire</motion.h2>
       
       <div className="flex flex-col gap-10 xl:flex-row items-center">
         <div className="flex flex-col gap-10 px-[8%]">

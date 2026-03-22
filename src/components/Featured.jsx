@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const Featured = () => {
   return (
     <section id="featured" className="flex flex-col lg:gap-15 xl:mx-[8%] pb-20">
-      <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="pt-20 text-4xl lg:text-5xl self-center font-medium font-heading lg:pb-10 pb-20">Featured Listings</motion.h2>
+      <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="pt-20 text-3xl md:text-4xl lg:text-5xl self-center font-medium font-heading lg:pb-10 pb-20">Featured Listings</motion.h2>
 
       <div className="flex flex-col md:flex-row justify-between md:gap-10">
         <div className="bg-gray-100">
