@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section className="z-10 h-screen text-white relative pl-[10%] lg:pl-[8%] py-10 bg-black">
-      <img src={heroImg} alt="hero property" loading="lazy" className="w-full h-full object-cover absolute inset-0 brightness-[0.6]"/>
+      <motion.img src={heroImg} alt="hero property" loading="lazy" initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut' }} viewport={{ once: true }} className="w-full h-full object-cover absolute inset-0 brightness-[0.6]"/>
 
       <header className="relative flex justify-between items-center">
         <div className="flex items-center gap-2 -translate-x-2">
@@ -43,11 +43,11 @@ const Hero = () => {
       </header>
 
       <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut', delay:0.2 }} className="flex flex-col gap-10 absolute bottom-10">
-        <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut', delay:0 }} className="text-6xl sm:text-7xl lg:text-8xl font-heading font-semibold flex-col flex">
-          <span className="block">Live Beyond</span>
+        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-heading font-semibold flex-col flex">
+          <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} className="block">Live Beyond</motion.span>
 
-          <span className="block ml-[10%]">Expectation</span>
-        </motion.h1>
+          <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }} className="block ml-[10%]">Expectation</motion.span>
+        </h1>
 
         <motion.p initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut', delay:0.2 }} className="mt-5 leading-relaxed pr-[20%] lg:text-xl lg:pr-[40%] text-lg font-secondary">Exclusive residences that redefine luxury — for those who settle for nothing less than distinction.</motion.p>
 
