@@ -43,7 +43,7 @@ const Featured = () => {
 
       <div className="flex flex-col lg:items-center lg:flex-row bg-gray-100">
         <div className="overflow-hidden lg:w-1/2 items-center flex">
-          <motion.img src={House3} alt="property 3" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut', delay:0.4 }} viewport={{ once: true }} className="w-full transition duration-500 ease-out md:hover:scale-105 md:brightness-[0.9] md:hover:brightness-[1]"/>
+          <motion.img src={House3} alt="property 3" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="w-full transition duration-500 ease-out md:hover:scale-105 md:brightness-[0.9] md:hover:brightness-[1]"/>
         </div>
         
 
