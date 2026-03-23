@@ -44,7 +44,7 @@ const Hero = () => {
       </header>
 
       <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut', delay:0.2 }} className="flex flex-col gap-10 absolute bottom-10">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-semibold flex-col flex">
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-heading font-semibold flex-col flex">
           <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} className="block">Live Beyond</motion.span>
 
           <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }} className="block ml-[10%]">Expectation</motion.span>
