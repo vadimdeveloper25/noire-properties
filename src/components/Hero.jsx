@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section className="z-10 h-dvh text-white relative pl-[10%] lg:pl-[8%] py-10 bg-black">
-      <motion.img src={heroImg} alt="hero property" loading="lazy" initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut' }} viewport={{ once: true }} className="w-full h-full object-cover absolute inset-0 brightness-[0.6]"/>
+      <motion.img src={heroImg} alt="hero property" initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut' }} viewport={{ once: true }} className="w-full h-full object-cover absolute inset-0 brightness-[0.6]"/>
       <div className="absolute inset-0 bg-linear-to-t from-black/25 to-black/0"/>
 
       <header className="relative flex justify-between items-center">
@@ -26,7 +26,7 @@ const Hero = () => {
           <a href="#why" className="focus:outline-none focus:ring-2 focus:ring-white w-30 py-3 border-2 flex justify-center rounded-4xl active:scale-95 active:duration-50 hover:bg-offwhite hover:text-black transition ease-in hover:border-transparent hover:cursor-pointer duration-300">Why Us</a>
         </nav>
 
-        <button onClick={() => setMenuState(prev => !prev)} className="lg:hidden border-2 rounded-full p-3 mr-[10%] transition duration-300 hover:rotate-90 cursor-pointer focus-visible:ring-2 focus:outline-none"><Menu size={30} /></button>
+        <button onClick={() => setMenuState(prev => !prev)} className="lg:hidden border-2 rounded-full p-3 mr-[10%] transition duration-300 hover:rotate-90 cursor-pointer focus-visible:ring-2 focus:outline-none" aria-label="Open navigation menu"><Menu size={30} /></button>
 
         <AnimatePresence>
           {menuState && (

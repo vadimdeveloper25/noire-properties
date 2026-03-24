@@ -23,7 +23,7 @@ const Why = () => {
           </div>
         </div>
                 
-        <motion.img src={whyImg} alt="why interior" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut', delay:0.4 }} viewport={{ once: true }} className="w-full xl:w-[45%]"/>
+        <motion.img src={whyImg} loading="lazy" alt="why interior" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut', delay:0.4 }} viewport={{ once: true }} className="w-full xl:w-[45%]"/>
       </div>
     </section>
   )

@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="flex flex-col gap-20 lg:flex-row lg:justify-between">
         <div className="flex flex-col gap-10 items-center lg:items-start">
           <div className="flex items-center gap-2 -translate-x-2">
-            <img src={Logo} alt="Noire Properties logo" className="w-12 h-12 -x-10"/>
+            <img src={Logo} alt="Noire Properties logo" loading="lazy" className="w-12 h-12 -x-10"/>
             
-            <p className="font-medium font-secondary text-2xl">Noire Properties</p>
+            <p className="font-medium font-secondary text-xl">Noire Properties</p>
           </div>
           
           <p className="text-sm font-secondary">© 2025 Noire Properties. All rights reserved.</p>

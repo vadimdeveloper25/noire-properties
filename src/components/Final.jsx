@@ -46,7 +46,7 @@ const Final = () => {
 
   return (
     <section id="final" className="relative h-dvh text-white p-[10%] flex sm:justify-center">
-      <motion.img src={finalImg} alt="about interior" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="absolute inset-0 h-full w-full object-cover brightness-[0.6]"/>
+      <motion.img src={finalImg} loading="lazy" alt="cta background" initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: 'easeOut', delay:0.2 }} viewport={{ once: true }} className="absolute inset-0 h-full w-full object-cover brightness-[0.5]"/>
 
       <AnimatePresence mode="wait">
         {!btnState && (
