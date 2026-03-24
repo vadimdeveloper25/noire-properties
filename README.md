@@ -2,7 +2,7 @@
 
 A luxury real estate landing page built with React and Tailwind CSS.
 
-**Live Site:** https://noire-properties-zolf.vercel.app
+**Live Site:** [https://noire-properties-zolf.vercel.app](https://noire-properties.vercel.app/)
 
 ## Features
 
